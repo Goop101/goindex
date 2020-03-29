@@ -24,7 +24,73 @@ classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)
 2.Auth and get the code  
 3.Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)  
 
+# Optional
+Use this when you want to host everything
 
+## Get Google ClientID and SecretID
+Log into the Google API Console [https://console.developers.google.com/] with your Google account. It doesn’t matter what Google account you use. (It need not be the same account as the Google Drive you want to access)
+
+Select a project or create a new project.
+
+Under “ENABLE APIS AND SERVICES” search for “Drive”, and enable the “Google Drive API”.
+
+Click “Credentials” in the left-side panel (not “Create credentials”, which opens the wizard), then “Create credentials”, then “OAuth client ID”. It will prompt you to set the OAuth consent screen product name, if you haven’t set one already.
+
+Choose an application type of “other”, and click “Create”. (the default name is fine)
+
+It will show you a client ID and client secret. Use these values in rclone config to add a new remote or edit an existing remote
+
+## Setup rclone
+
+Install `rclone` software locally  
+Follow [https://rclone.org/drive/]( https://rclone.org/drive/) bind a drive
+
+Use the `client_id` & `client_secret` while setup
+
+Execute the command `rclone config file` to find the file `rclone.conf` path  
+
+open rclone's config file, here we will find following Configurations (we will need these in next steps)
+- client_id
+- client_secret
+- refresh_token
+- ROOT_FOLDER (will be like 0AG1OSyxjvYcLUk9PVA)
+
+## Setup Cloudfare Workers
+
+Go to [https://workers.cloudflare.com/]
+
+signup using email and password
+enter a subdomain [____.workers.dev] ---> Set up
+
+Choose Workers Plan (FREE)
+- FREE - 10000 request/day
+- $5/month - 10M requests/month
+  
+Verify Email
+Goto Workers ---> "Create a Worker"
+
+Now copy the Content of the `index.js` to the script section
+
+Edit this object in the script with the details you generated above
+
+```
+var authConfig = {
+    "siteName": "GoIndex", // Sitename
+    "root_pass": "",  // root password, leave it blank if you don't want
+    "version" : "1.0.6", // Program Version
+    "theme" : "classic", // material  classic 
+    "client_id": "****************************.apps.googleusercontent.com", // client_id from rclone config
+    "client_secret": "*******************", // client_secret from rclone config
+    "refresh_token": "******************************************", // authorized refresh token from rclone config
+    "root": "0AG1OSyxjvYcLUk9PVA" // ROOT_FOLDER from rclone config,
+};
+```
+
+note : 
+- if you have binded Teamdrive with rclone then make sure you specify the TeamDrive's root folder.
+Example - ["root": "0AG1OSyxjvYcLUk9PVA"]
+- but if you want to use "My Drive" then simply write "root".
+Example - ["root": "root"]
 
 ## About  
 Cloudflare Workers allow you to write JavaScript which runs on all of Cloudflare's 150+ global data centers.  
