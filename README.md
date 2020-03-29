@@ -92,5 +92,28 @@ Example - ["root": "0AG1OSyxjvYcLUk9PVA"]
 - but if you want to use "My Drive" then simply write "root".
 Example - ["root": "root"]
 
+
+## Host src file in your own github repo
+why ?
+
+you can change the icon of the folders and files and much more 
+
+replace the below line in head with yours
+```
+<USERNAME>
+<REPOSITORY>
+<VERSION or HASH>
+</PATH/TO/FILE>
+```
+```
+src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/<USERNAME>/<REPOSITORY>@<VERSION or HASH>/PATH/TO/FILE.js"
+```
+Example :
+
+```
+src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/alx-xlx/gdrive-http-directory@7add5ab/small.js"
+```
+
+
 ## About  
 Cloudflare Workers allow you to write JavaScript which runs on all of Cloudflare's 150+ global data centers.  
