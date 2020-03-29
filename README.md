@@ -92,7 +92,7 @@ var authConfig = {
 };
 ```
 
-Important Note : 
+### Important Note : 
 - if you have binded Teamdrive with rclone then make sure you specify the TeamDrive's root folder.
 Example - ["root": "0AG1OSyxjvYcLUk9PVA"]
 - but if you want to use "My Drive" then simply write "root".
@@ -123,6 +123,8 @@ src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/alx-xlx/g
 
 ## Change Icons
 SOON
+
+https://www.base64-image.de/
 
 ## About  
 Cloudflare Workers allow you to write JavaScript which runs on all of Cloudflare's 150+ global data centers.  
