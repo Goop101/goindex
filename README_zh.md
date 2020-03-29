@@ -1,4 +1,4 @@
-![GoIndex](https://raw.githubusercontent.com/donwa/goindex/master/themes/logo.png)  
+<!-- ![GoIndex](https://raw.githubusercontent.com/donwa/goindex/master/themes/logo.png)  
 
 GoIndex  
 ====  
@@ -57,4 +57,4 @@ classic:
   
 1.0.0  
 前后端分离，确定基本架构  
-添加.password 支持  
+添加.password 支持   -->
