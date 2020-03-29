@@ -92,12 +92,12 @@ var authConfig = {
 };
 ```
 
-note : 
+Important Note : 
 - if you have binded Teamdrive with rclone then make sure you specify the TeamDrive's root folder.
 Example - ["root": "0AG1OSyxjvYcLUk9PVA"]
 - but if you want to use "My Drive" then simply write "root".
 Example - ["root": "root"]
-- Each time you make a commit to a file its HASH changes, so to access the new file you have to specify the hash
+- Each time you make a commit to a file its HASH changes, so to access the new file you have to specify the hash OR keep it default `"hash" : "master"`
 
 
 ## Host src file in your own github repo
