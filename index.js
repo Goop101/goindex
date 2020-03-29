@@ -1,8 +1,8 @@
 var authConfig = {
   "siteName": "GoIndex", // Sitename
   "root_pass": "",  // root password, leave it blank if you don't want
-  "version" : "1.0.6", // Program Version
-  "hash" : "master", // do not leave blank (changes each time you make a commit)
+  // "version" : "1.0.7", // Program Version
+  "hash" : "18bc8f4", // master OR your HASH, do not leave blank (changes each time you make a commit)
   "theme" : "classic", // material  classic 
   "client_id": "202264815644.apps.googleusercontent.com", // client_id from rclone config
   "client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ", // client_secret from rclone config
