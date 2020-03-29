@@ -78,6 +78,7 @@ var authConfig = {
     "siteName": "GoIndex", // Sitename
     "root_pass": "",  // root password, leave it blank if you don't want
     "version" : "1.0.6", // Program Version
+    "hash" : "master", // do not leave blank (changes each time you make a commit)
     "theme" : "classic", // material  classic 
     "client_id": "****************************.apps.googleusercontent.com", // client_id from rclone config
     "client_secret": "*******************", // client_secret from rclone config
@@ -111,7 +112,7 @@ src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/<USERNAME
 Example :
 
 ```
-src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/alx-xlx/gdrive-http-directory@7add5ab/small.js"
+src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/alx-xlx/goindex@${authConfig.hash}/themes/${authConfig.theme}/app.js"
 ```
 
 
