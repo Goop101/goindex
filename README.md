@@ -9,7 +9,9 @@ Combining the power of [Cloudflare Workers](https://workers.cloudflare.com/) and
 
 ## Demo  
 material: [https://index.gd.workers.dev/](https://index.gd.workers.dev/)  
-classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)  
+classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)
+
+![](https://i.imgur.com/lNeh3S3.png)
 
 ## Deployment  
 1.Install `rclone` software locally  
