@@ -7,12 +7,12 @@ Combining the power of [Cloudflare Workers](https://workers.cloudflare.com/) and
 
 `index.js` is the content of the Workers script.  
 
-## Demo  
-material: [https://index.gd.workers.dev/](https://index.gd.workers.dev/)
+## Themes
+### material: [https://index.gd.workers.dev/](https://index.gd.workers.dev/)
 
 ![](https://i.imgur.com/jAq7Lsm.png)
 
-classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)
+### classic: [https://indexc.gd.workers.dev/](https://indexc.gd.workers.dev/)
 
 ![](https://i.imgur.com/lNeh3S3.png)
 
