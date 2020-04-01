@@ -94,7 +94,7 @@ function list_files(path,files){
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 				</tr>
             `;
-        } else if(item['mimeType'] == 'application/vnd.google-apps.photo'){
+        } else if(item['mimeType'] == 'image/jpeg'){
 	        var p = path+item.name;
             html += `
 				<tr>
