@@ -194,6 +194,56 @@ function list_files(path,files){
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
             `;
+        } else if(item['mimeType'] == 'application/x-msdos-program'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-x-msdos-program" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">${item['mimeType']}</td>
+				</tr>
+            `;
+        } else if(item['mimeType'] == 'application/x-msdownload'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-x-msdownload" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">${item['mimeType']}</td>
+				</tr>
+            `;
+        } else if(item['mimeType'] == 'application/x-bittorrent'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-application/x-bittorrent" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">${item['mimeType']}</td>
+				</tr>
+            `;
+        } else if(item['mimeType'] == 'application/vnd.google-apps.spreadsheet'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-google.spreadsheet" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">application/google.spreadsheet</td>
+				</tr>
+            `;
+        } else if(item['mimeType'] == 'application/vnd.google-apps.presentation'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-google.presentation" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">application/google.presentation</td>
+				</tr>
+            `;
         } else{
 	        var p = path+item.name;
             html += `
