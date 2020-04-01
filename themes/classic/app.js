@@ -200,7 +200,8 @@ function list_files(path,files){
 				<tr>
 					<td class="file-name"><a class="icon icon-file" href="${p}">${item.name}</a></td>
 					<td class="file-size">${item['size']}</td>
-					<td class="file-date-modified">${item['modifiedTime']}</td>
+                    <td class="file-date-modified">${item['modifiedTime']}</td>
+                    <td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
             `;
         }
