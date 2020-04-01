@@ -181,7 +181,8 @@ function list_files(path,files){
 					<td class="file-name"><a class="icon icon-pdf" href="${p}">${item.name}</a></td>
 					<td class="file-size">${item['size']}</td>
 					<td class="file-date-modified">${item['modifiedTime']}</td>
-					<td class="file-date-modified">${item['mimeType']}</td>
+                    <td class="file-date-modified">${item['mimeType']}</td>
+                    <td class="file-date-modified">${item['iconLink']}</td>
 				</tr>
             `;
         } else if(item['mimeType'] == 'application/msword'){
@@ -231,7 +232,9 @@ function list_files(path,files){
 					<td class="file-name"><a class="icon icon-google.spreadsheet" href="${p}">${item.name}</a></td>
 					<td class="file-size">${item['size']}</td>
 					<td class="file-date-modified">${item['modifiedTime']}</td>
-					<td class="file-date-modified">application/google.spreadsheet</td>
+                    <td class="file-date-modified">application/google.spreadsheet</td>
+                    <td class="file-date-modified">${item['iconLink']}</td>
+                    
 				</tr>
             `;
         } else if(item['mimeType'] == 'application/vnd.google-apps.presentation'){
