@@ -123,7 +123,8 @@ src="//cdn.jsdelivr.net/combine/gh/jquery/jquery/dist/jquery.min.js,gh/alx-xlx/g
 
 ## Change Icons
 SOON
-
+https://www.w3.org/Icons/
+https://www.w3.org/icons/
 https://www.base64-image.de/
 
 ## About  
