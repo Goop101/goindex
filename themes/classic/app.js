@@ -20,12 +20,15 @@ th{font-weight:700}
 .icon-audio{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAQAAADcrC56AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA75o43NsAAAAHdElNRQfkBAQULiAQpeDrAAABvklEQVQoz22SP2gTYRiHn/e7u6TmSq45kmBiIpSoKQRilSII/sPZTC7iLBQnB+eOBZfiqKuL4CjiIKKCYonUWhFLyCApHdSiNpo/Jr1cvs/BQG3Nuz4PD7/htRh3Co8Zpp3w4O+2GYddjstNVafrLZUyi7IXW8SY44a1Gjcp7Zj8zmzlvG3/g12OccGuRM7lmKYj70Ehhl0lxRXnknM2GymQx+UpvRHYVRJcnjpziiQJ6jT4gkb2KYaBRZomL+kQEsXB7FNAvvMQxQC/51V/uKaMs19B0MRDr2o/iz9YPx0ukv5PiZF7N/HIerz5cTVgDg1jKqyWbt2bVPOZYu9Iy/s7xrYQNBqGaANmzbGuzi1c9Fd4BeGoEpOWT4HDeAJmy0mcLPsOnxmMyraSVjZ6vVhJR6p5A5IcbHx4vt31t3CIKqVCUQPLLc3OXysXZ5QLSG7Yvb9xp7+d5BDua7URDG1EDvQTb1mmjQfAia+/7sY2JWMb6wX1HW1hTP+nXyt/kwhp3JXhExMutGu16BtV1Y180MYC3YqsT/mpgh9MLtu3g4bwic5gGOhA6yaC2BxlwiYrWYGmNCQIWdvzRH8Ab2CZzsotOLEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDQtMDRUMjA6NDY6MzIrMDA6MDB0fPY1AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA0LTA0VDIwOjQ2OjMyKzAwOjAwBSFOiQAAAABJRU5ErkJggg==) left top no-repeat}
 .icon-7z{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAHdElNRQfkBQgTHRi+Nb3IAAAB7klEQVQoz2WTv2sUQRiGn292dvf29ryQYLBSLJSQImAtWtjEwmtSGfAPEKOgiMWlsNAgiBEbqxDTiSBYqEgKwYC1jQqCWph4RNREg97lvMt6M5/FXi4/fKYbnoGP950P6COiUA5uSwPdOtIK7iR7ImIGAbAgZARn/Xl5Ie/IUYp62l3MomQya/ykwjOAhKQsr2QhLdNjxJjHKN7cjUqWkDEsgBbo09fN+ik+IIR8ooa2AfETzhSqncZ8Lm4yjwIQ4UAAMO5ca6M46TYMbN5tETLu5RtN6jTwOtE+2cYO0OoJMRVA6HCP6EbnvoqoHHW3/LA+tWsIiQMU2jzqPcpWzAoAdbmKgDVX/N5WQklGzDViLKCoGqlFc9rMwCgCWD8Num4u6aJPuakDdKRfU5DVv895vzW3yafXM0EafJcsqiaj9kmeuRpltxgzJF/9BX9Ex+P97ni3ne1eV0Rmtd+PSbMwlx0jb0h2ppbn2Ahq7jIlsyyt8G34EkCM+O2mDa7rPok6U/wyM7jWCVQ/mxmMLNkvit/ZRDooH5ndVQ8WiyEY5oepgj3AKk7ywA/iupIQYFkmA0QAbI0Y2vyWQ2l5qc5/2MMUZQ0shKzXzUOd+vOg93E3USm6CotmQQBSQuKymZb69lXoLoSaN3YUhvgHlFC/SvbklcMAAABBdEVYdGNvbW1lbnQAQ1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gODUKC8DAuwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wNS0wOFQxOToyOToyNCswMDowMEmMLvwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDUtMDhUMTk6Mjk6MjQrMDA6MDA40ZZAAAAAAElFTkSuQmCC) left top no-repeat}
 .icon-zip{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAQAAAA3m5V5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfkBQkDNzfeFYisAAABSElEQVQoz3WSPUtDQRBFz8wmmkcMIQkYFFvtBe0t7GysbQIWFmIR7FJZaCM2CrEQRcFC8A+kEvMDREGxUhCxsAuiedGY97EWxpD3MGebZedyLzszOFV9x6XZd1zaUhkWRflFtBFucYXhD0uGXYpStscKhAA0mCZKhmssDVmCBAVAoc8FMBiRAMjbPVnwka4ogsNEUw+oUaNlF+GtGzfTL0rjACaJss2pAJCIO7XIkOHTAy7I2u5rzOk/dFBBkN4tHjfOMilCcx948qXFcIpAb+OiFJPkmbdnJG3HzvJBJ1yNxz1RMkfyrPt8Y2lTYd1qxMnBR3JeWc79G5SQIdboSEKjWR5+iRFzgiKAMIrqRsTJJTnmr9isd8gdDi08NqkH0d9ZxGWHAoYX6nS45BFy0S0w0Vn3SCjhHGkMwmvwMKCzvc1sUx3U/R8lgmk3/bDp/AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wNS0wOVQwMzo1NTo1NSswMDowMN8Bz50AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDUtMDlUMDM6NTU6NTUrMDA6MDCuXHchAAAAAElFTkSuQmCC) left top no-repeat}
+.icon-mid{background:url(data:image/gif;base64,R0lGODlhFAAWAMIAAP////8zM8z//8zMzJmZmWYAADMzMwAAACH+TlRoaXMgYXJ0IGlzIGluIHRoZSBwdWJsaWMgZG9tYWluLiBLZXZpbiBIdWdoZXMsIGtldmluaEBlaXQuY29tLCBTZXB0ZW1iZXIgMTk5NQAh+QQBAAACACwAAAAAFAAWAAADayi63P4wNsNCkOocYVWPB7FxFwmFwGh+DZpynndpNAHcW9cVQUj8tttrd+G5hMINT7A0BpE4ZnF6hCqn0iryKs0SDN9v0tSc0Q4DQ1SHFRjeBrQ6FzNN5Co2JD4YfUp7GnYsexQLhBiJigsJADs=) left top no-repeat}
+.icon-text{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWBAMAAAAyb6E1AAAAD1BMVEX////M//+ZmZkzMzMAAABVsTOVAAAAAnRSTlP/AOW3MEoAAAABYktHRACIBR1IAAAAT0lEQVQIW5XIsQ3AIAwF0VNgAa+AGABkD0Dx958pRRy55qrTw93dfZsZC6C1WnZtq2Ubq0unR0Rql5TKM2YqjPmpdCjlVuFG//XxFYYpsxfEkhYAImC9XwAAAFZ0RVh0Y29tbWVudABUaGlzIGFydCBpcyBpbiB0aGUgcHVibGljIGRvbWFpbi4gS2V2aW4gSHVnaGVzLCBrZXZpbmhAZWl0LmNvbSwgU2VwdGVtYmVyIDE5OTV29u+cAAAAAElFTkSuQmCC) left top no-repeat}
+.icon-xml{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAMAAAD3n0w0AAACUlBMVEUzM5ktLS0uLS4uLi4vLy8wLzAvMC8wMDAzMzMAAACZmZmdnZ2enp6fnp6fnp+fn5+fn6Cgn5+goKCgoKGhoKGhoaGhoqKioqKjo6Ojo6SkpKSkpaWlpaWmpaWlpqampqamp6anp6eoqKeoqKjZ2dna2trb2tvb29vc29zb3Nvc3Nvc3Nzc3dzd3dzd3d3d3t7e3t3e3t7e397e39/f39/g39/f4N/g4ODg4OHh4ODh4OHh4eDh4eHh4eLi4eHh4uLi4uHi4uLj4uLj4uPi4+Lj4+Pj4+Tk4+Pk4+Tj5OTk5OTk5OXl5OTk5eTk5eXl5eXl5ebm5eXm5ebl5uXl5ubm5ubm5ufn5ufm5+bm5+fn5+fn5+jo5+fo5+jn6Ojo6Ofo6Ojp6Ono6enp6ejp6enp6erq6enq6erp6unp6urq6unq6urq6uvr6uvq6+vr6+vr6+zs6+vs6+zr7Ovr7Ozs7Ozs7O3t7Ozt7O3s7e3t7e3u7e3t7u3t7u7u7u3u7u7u7u/v7u/v7+7v7+/v7/Dw7/Dv8O/v8PDw8PDx8PDx8PHw8fDw8fHx8fDx8fHx8fLx8vHy8vHy8vLy8vPz8vLz8vPy8/Ly8/Pz8/Lz8/Pz8/T08/Tz9PP09PP09PT19PT19PX09fT09fX19fX19fb29fX29fb19vb29vb29vf39vf39/f49/j3+Pf3+Pj4+Pj4+Pn5+fn5+fr6+fn6+fr6+vr7+vr7+vv6+/v7+/v8+/v8/Pz9/Pz8/fz9/fz9/f3+/f3+/f7+/v7+/v///v/////fys0IAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAFXSURBVBjTY+BABgxQwHH06KH9e3Zu3bR+NcdSmCjHkUP7du/YunH96mUc82ZCRTkO7t25bcuG9asXz+eYPrEbIsqxe+fWjRtWr1g2fxbHhM72BrAox84tG9etXrF43sxJnBxgCBLcvGH9qmWL5k7r6+WEAJDg+rVArbOn9vU1N1VxAQFYEKh1/sxJEzpaGqrK8mGCixfNmjlJmb2ZRaY0Lz0pASK4YO6USUps8nXSLJKpiXFREMGZk/oUWeWrSvMlmEVjQv0hghN6FFlAYlkposxC/l4QwT4FFrnKguy0hNgoAUY+V4hgc5Msi1RORnJMqCAjr7MtRLC+qkiKWTwhKpSfkdfRzhIiWFmSnybGLBLEz8jjYGNuAhEszE5JiBZm8mbktrc2NTKACALFokKD/VwdbSxNDPV0IILJsZFB/m5AMXOgmJY6RJCDCwWAg46BgRMNMDAAAPL/bsEHDD2+AAAAAElFTkSuQmCC) left top no-repeat}
 </style>`);
 
 // .icon-image{background:url() left top no-repeat}
 // .icon-video{background:url() left top no-repeat}
 // 
-// .icon-text{background:url() left top no-repeat}
+// 
 // .icon-pdf{background:url() left top no-repeat}
 // .icon-msword{background:url() left top no-repeat}
 
@@ -126,6 +129,16 @@ function list_files(path,files){
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 				</tr>
             `;
+        } else if(item['mimeType'] == 'audio/mid'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-mid" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">${item['mimeType']}</td>
+				</tr>
+            `;
         } else if(item['mimeType'] == 'audio/mpeg'){
 	        var p = path+item.name;
             html += `
@@ -166,11 +179,31 @@ function list_files(path,files){
 					<td class="file-date-modified">${item['mimeType']}</td>
 				</tr>
             `;
+        } else if(item['mimeType'] == 'application/x-zip-compressed'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-zip" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">${item['mimeType']}</td>
+				</tr>
+            `;
         } else if(item['mimeType'] == 'text/plain'){
 	        var p = path+item.name;
             html += `
 				<tr>
 					<td class="file-name"><a class="icon icon-text" href="${p}">${item.name}</a></td>
+					<td class="file-size">${item['size']}</td>
+					<td class="file-date-modified">${item['modifiedTime']}</td>
+					<td class="file-date-modified">${item['mimeType']}</td>
+				</tr>
+            `;
+        } else if(item['mimeType'] == 'text/xml'){
+	        var p = path+item.name;
+            html += `
+				<tr>
+					<td class="file-name"><a class="icon icon-xml" href="${p}">${item.name}</a></td>
 					<td class="file-size">${item['size']}</td>
 					<td class="file-date-modified">${item['modifiedTime']}</td>
 					<td class="file-date-modified">${item['mimeType']}</td>
