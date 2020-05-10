@@ -100,6 +100,8 @@ function list(path){
 	$('#table').html(content);
 	
     var password = localStorage.getItem('password'+path);
+	$('#list').html(`<div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div>`);
+
     $.post(path,'{"password":"'+password+'"}', function(data,status){
         var obj = jQuery.parseJSON(data);
         if(typeof obj != 'null' && obj.hasOwnProperty('error') && obj.error.code == '401'){
@@ -320,7 +322,9 @@ function list_files(path,files){
         }
     }
     $('#table').append(html);
+	$('#list').html(html);
 }
+
 
 //时间转换
 function utc2beijing(utc_datetime) {
