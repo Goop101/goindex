@@ -72,8 +72,6 @@ function render(path){
 // 渲染 title
 function title(path){
     path = decodeURI(path);
-	$('#list').html(`<div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div>`);
-	$('#list').html(html);
     $('title').html(document.siteName+' - '+path);
 }
 
@@ -107,7 +105,8 @@ function list(path){
 	
     var password = localStorage.getItem('password'+path);
 	
-
+	$('#list').html(`<div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div>`);
+	$('#list').html(html);
     $.post(path,'{"password":"'+password+'"}', function(data,status){
         var obj = jQuery.parseJSON(data);
         if(typeof obj != 'null' && obj.hasOwnProperty('error') && obj.error.code == '401'){
