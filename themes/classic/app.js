@@ -1,5 +1,5 @@
-// document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
-// document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
+document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
+document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
 
 document.write(`
 <style>
@@ -32,6 +32,7 @@ th{font-weight:700}
 .icon-html{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAQAAAA3m5V5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfkBQkKBRXp1Ka2AAABeElEQVQoz3WSzStEYRTGf+97L3MNY2SBGfKdYqesbCRr2VrJavwDylZJskGhSBnZWxobOxuJjXxFUYo0NaUZbsZ177G4F3fEczan0+k5zznnoWJV53mhEIoXVYxOp3Qr7fhQRk7POYcYfEGIsaiT0cnCWicG1wDk6KUUMY4R/Vw1Dt10ARpCLICFpZSAF7cXqkYuUUFTCRL0F8o31B4ZL/86DHfBuL5wUzMJwCpDM8+2z2H+ZrqnmTYeHGCfuBdUfzH9BQ1IaUkBMQQryP1xBqNcE6OOOC0ojiqtyKm6qhnUEbueE85MBIMxdmiimxtS5CRrjzt27WZ+xj0gicOZL9+ljUZspjlgi7R8eB35RSkTDxf52W4Ckx08BEH40LORR3uABkpOsEw9FYFOUO93zq70kgBMlA52fCCLBnTwBy2gQSmmyJgoXNa55YJqhDRPFFniHMio6nKj2PO3C0IX839vGughpxIDxWNgnpC1XD/5duYbK/8xfgIXV3unfHDg0QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wNS0wOVQxMDowNToyMSswMDowMHAZw20AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDUtMDlUMTA6MDU6MjErMDA6MDABRHvRAAAAAElFTkSuQmCC) left top no-repeat}
 .icon-rar{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAQAAAAul0yEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfkBQkKBzZ5hbVGAAABZ0lEQVQoz12SPSjEcRjHP7+Xu59z56XzEhIuk8F2isFmMxhMUnal1NmUiUzYThl0ZVBmVjNZxEAhfyVFuPP2P/R/+RmOc3ye8dvz7en7fTBbosDj74iPqmxfpJ1uAIS6EDP+NZISITNiNDZdXOuhikPgiGYqWcbK+5phWAXgmNYfpQtQC1isOkmk4oCuXHSIEt14L4axYMTtxPkn5/AQZ+EiipS1/DcvI+mhnh9zDfhEaMTlFUlt+HIaIEigAZtSTisa39y61SSx+t6YYh2IFw2EV71BDunL26zfb9OBeNoOkwxar/igAevVU2DOjnwO2QYytHljWLJc+tnS5QEpZmmTB0GSODEsigkKUpbCFCKvOyKfZoMm5slg8LSr0rGVkqysk5iUHh3cMU4GD8SS2QzTGhDcsKv3ElNvHzTj8MoOeOct+8/d5UokccyfbJIYtIqLAf8aGebdy7/R5QG+3+GZ9XLnFXwBD+yC4BnhT5YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDUtMDlUMTA6MDc6NTQrMDA6MDAsETXuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA1LTA5VDEwOjA3OjU0KzAwOjAwXUyNUgAAAABJRU5ErkJggg==) left top no-repeat}
 </style>`);
+
 
 // .icon-image{background:url() left top no-repeat}
 // .icon-video{background:url() left top no-repeat}
