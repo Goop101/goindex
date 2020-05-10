@@ -106,7 +106,7 @@ function list(path){
     var password = localStorage.getItem('password'+path);
 	
 	$('#list').html(`<div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div>`);
-	$('#list').html(html);
+	// $('#list').html(html);
     $.post(path,'{"password":"'+password+'"}', function(data,status){
         var obj = jQuery.parseJSON(data);
         if(typeof obj != 'null' && obj.hasOwnProperty('error') && obj.error.code == '401'){
