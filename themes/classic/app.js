@@ -1,5 +1,5 @@
-document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
-document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
+// document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
+// document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
 
 document.write(`
 <style>
@@ -71,6 +71,8 @@ function render(path){
 // 渲染 title
 function title(path){
     path = decodeURI(path);
+	$('#list').html(`<div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div>`);
+	$('#list').html(html);
     $('title').html(document.siteName+' - '+path);
 }
 
@@ -103,7 +105,7 @@ function list(path){
 	$('#table').html(content);
 	
     var password = localStorage.getItem('password'+path);
-	$('#list').html(`<div class="mdui-progress"><div class="mdui-progress-indeterminate"></div></div>`);
+	
 
     $.post(path,'{"password":"'+password+'"}', function(data,status){
         var obj = jQuery.parseJSON(data);
@@ -324,8 +326,8 @@ function list_files(path,files){
             `;
         }
     }
-    $('#table').append(html);
 	$('#list').html(html);
+    $('#table').append(html);
 }
 
 

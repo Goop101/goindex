@@ -169,7 +169,7 @@ function list_files(path,files){
 	      </li>`;
         }
     }
-    // $('#list').html(html);
+    $('#list').html(html);
 }
 
 
