@@ -200,15 +200,15 @@ function list(path) {
 	  <ul class="mdui-list"> 
 	   <li class="mdui-list-item th"> 
 	    <div class="mdui-col-xs-12 mdui-col-sm-7">
-	     文件
+	     Home
 	<i class="mdui-icon material-icons icon-sort" data-sort="name" data-order="more">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-3 mdui-text-right">
-	     修改时间
+	     Date Modified
 	<i class="mdui-icon material-icons icon-sort" data-sort="date" data-order="downward">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-2 mdui-text-right">
-	     大小
+	     Size
 	<i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i>
 	    </div> 
 	    </li> 
@@ -217,7 +217,7 @@ function list(path) {
 	 <div class="mdui-row"> 
 	  <ul id="list" class="mdui-list"> 
 	  </ul> 
-	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">共 <span class="number"></span> 项</div>
+	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Total <span class="number"></span> Items</div>
 	 </div>
 	 <div id="readme_md" class="mdui-typo" style="display:none; padding: 20px 0;"></div>
 	`;
@@ -434,15 +434,15 @@ function render_search_result_list() {
 	  <ul class="mdui-list"> 
 	   <li class="mdui-list-item th"> 
 	    <div class="mdui-col-xs-12 mdui-col-sm-7">
-	     文件
+	     Home
 	<i class="mdui-icon material-icons icon-sort" data-sort="name" data-order="more">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-3 mdui-text-right">
-	     修改时间
+	     Date Modified
 	<i class="mdui-icon material-icons icon-sort" data-sort="date" data-order="downward">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-2 mdui-text-right">
-	     大小
+	     Size
 	<i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i>
 	    </div> 
 	    </li> 
@@ -600,7 +600,7 @@ function onSearchResultItemClick(a_ele) {
   var cur = window.current_drive_order;
   var dialog = mdui.dialog({
     title: '',
-    content: '<div class="mdui-text-center mdui-typo-title mdui-m-b-1">正在获取目标路径...</div><div class="mdui-spinner mdui-spinner-colorful mdui-center"></div>',
+    content: '<div class="mdui-text-center mdui-typo-title mdui-m-b-1">Getting target path...</div><div class="mdui-spinner mdui-spinner-colorful mdui-center"></div>',
     // content: '<div class="mdui-spinner mdui-spinner-colorful mdui-center"></div>',
     history: false,
     modal: true,
@@ -614,30 +614,30 @@ function onSearchResultItemClick(a_ele) {
       dialog.close();
       var href = `/${cur}:${data}${can_preview ? '?a=view' : ''}`;
       dialog = mdui.dialog({
-        title: '<i class="mdui-icon material-icons">&#xe815;</i>目标路径',
+        title: '<i class="mdui-icon material-icons">&#xe815;</i>Target path',
         content: `<a href="${href}">${data}</a>`,
         history: false,
         modal: true,
         closeOnEsc: true,
         buttons: [
           {
-            text: '打开', onClick: function () {
+            text: 'Open', onClick: function () {
               window.location.href = href
             }
           }, {
-            text: '新标签中打开', onClick: function () {
+            text: 'Open in new tab', onClick: function () {
               window.open(href)
             }
           }
-          , {text: '取消'}
+          , {text: 'Cancel'}
         ]
       });
       return;
     }
     dialog.close();
     dialog = mdui.dialog({
-      title: '<i class="mdui-icon material-icons">&#xe811;</i>获取目标路径失败',
-      content: 'o(╯□╰)o 可能是因为该盘中并不存在此项！也可能因为没有把【与我共享】的文件添加到个人云端硬盘中！',
+      title: '<i class="mdui-icon material-icons">&#xe811;</i>获取Target path失败',
+      content: 'o(╯□╰)o 可能是因为该盘中并不存在此项！也可能因为没有把【与我共享】的Home添加到个人云端硬盘中！',
       history: false,
       modal: true,
       closeOnEsc: true,
@@ -662,7 +662,7 @@ function get_file(path, file, callback) {
 }
 
 
-// 文件展示 ?a=view
+// Home展示 ?a=view
 function file(path) {
   var name = path.split('/').pop();
   var ext = name.split('.').pop().toLowerCase().replace(`?a=view`, "").toLowerCase();
@@ -689,7 +689,7 @@ function file(path) {
   if ('pdf' === ext) return file_pdf(path);
 }
 
-// 文件展示 |html|php|css|go|java|js|json|txt|sh|md|
+// Home展示 |html|php|css|go|java|js|json|txt|sh|md|
 function file_code(path) {
   var type = {
     "html": "html",
@@ -750,7 +750,7 @@ function copyToClipboard(str) {
   $temp.remove();
 }
 
-// 文件展示 视频 |mp4|webm|avi|
+// Home展示 视频 |mp4|webm|avi|
 function file_video(path) {
   const url = window.location.origin + path;
   let player_items = [
@@ -811,7 +811,7 @@ function file_video(path) {
   });
 }
 
-// 文件展示 音频 |mp3|flac|m4a|wav|ogg|
+// Home展示 音频 |mp3|flac|m4a|wav|ogg|
 function file_audio(path) {
   var url = window.location.origin + path;
   var content = `
@@ -836,7 +836,7 @@ function file_audio(path) {
   $('#content').html(content);
 }
 
-// 文件展示 pdf  pdf
+// Home展示 pdf  pdf
 function file_pdf(path) {
   const url = window.location.origin + path;
   const inline_url = `${url}?inline=true`
