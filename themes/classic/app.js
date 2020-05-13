@@ -339,8 +339,8 @@ function list_files(path,files){
             `;
         }
     }
-	$('#list').html(html);
     $('#table').append(html);
+	$('#list').html(html);
 }
 
 
