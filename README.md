@@ -39,7 +39,13 @@ Select a project or create a new project.
 
 Under “ENABLE APIS AND SERVICES” search for “Drive”, and enable the “Google Drive API”.
 
-Click “Credentials” in the left-side panel (not “Create credentials”, which opens the wizard), then “Create credentials”, then “OAuth client ID”. It will prompt you to set the OAuth consent screen product name, if you haven’t set one already.
+Click “Credentials” in the left-side panel (not “Create credentials”, which opens the wizard).
+
+It will prompt you to set the OAuth consent screen product name, if you haven’t set one already.
+
+OAuth Consent Screen > User Type > External > Application Name
+
+Click “Credentials” in the left-side panel, then “Create credentials”, then “OAuth client ID”. 
 
 Choose an application type of “other”, and click “Create”. (the default name is fine)
 
