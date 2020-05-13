@@ -1,20 +1,17 @@
 self.props = {
-    title: 'GDIndex',
-    default_root_id: '********',
-    root_drive : 'rootId', // self.props.root_drive || rootId //
-    storage : 'drives', // drive OR drives
-    ui : 'light', // dark OR light
-    hash : '', // each commits gets a new hash
-    client_id: '*******.apps.googleusercontent.com',
-    client_secret: '*****',
-    refresh_token: '*******',
-    auth: false,
-    user: '',
-    pass: '',
-    upload: true,
-    lite: false
+	title: 'goindex',
+	default_root_id: '0AK0dce9h38dOUk9PVA', // root OR 0AK0dce9h38dOUk9PVA
+  storage: 'drives', // drive OR drives
+  ui: 'dark', // light OR dark
+	client_id: '*******.apps.googleusercontent.com',
+	client_secret: '*****',
+	refresh_token: '******',
+	auth: false,
+	user: '',
+	pass: '',
+	upload: false,
+	lite: false
 };
-
 (function () {
   'use strict';
 
@@ -289,7 +286,7 @@ self.props = {
 
     async listDrive() {
       await this.initializeClient();
-      return this.client.get(self.props.storage).json();
+      return this.client.get(`${self.props.storage}`).json();
     }
 
     async download(id, range = '') {
@@ -447,24 +444,17 @@ self.props = {
   }
 
   const gd = new GoogleDrive(self.props);
-  const HTML = `<!DOCTYPE html><html lang=en>
-  <head>
-  <meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge">
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <title>${self.props.title}</title><link href="/~_~_goindex/resources/css/app.css" rel=stylesheet>
-  </head>
-  <body>
-  <script>window.props = { title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', api: location.protocol + '//' + location.host, upload: ${self.props.upload} }<\/script><div id=app></div><script src="/~_~_goindex/resources/js/app.js"><\/script></body></html>`;
+  const HTML = `<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>${self.props.title}</title><link href="/~_~_goindex/resources/css/app.css" rel=stylesheet></head><body><script>window.props = { title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', api: location.protocol + '//' + location.host, upload: ${self.props.upload} }<\/script><div id=app></div><script src="/~_~_goindex/resources/js/app.js"><\/script></body></html>`;
 
   async function onGet(request) {
     let {
       pathname: path
     } = request;
-    const rootId = request.searchParams.get(self.props.root_drive) || self.props.default_root_id;
+    const rootId = request.searchParams.get('rootId') || self.props.default_root_id;
 
     if (path.startsWith('/~_~_goindex/resources/')) {
       const remain = path.replace('/~_~_goindex/resources/', '');
-      const r = await fetch(`https://raw.githubusercontent.com/alx-xlx/goindex@${self.props.hash}/themes/material-vue-${self.props.ui}/${remain}`);
+      const r = await fetch(`https://raw.githubusercontent.com/alx-xlx/goindex/master/themes/material-vue-${self.props.ui}/${remain}`);
       return new Response(r.body, {
         headers: {
           'Content-Type': mime.getType(remain) + '; charset=utf-8',
@@ -515,7 +505,7 @@ self.props = {
     let {
       pathname: path
     } = request;
-    const rootId = request.searchParams.get(self.props.root_drive) || self.props.default_root_id;
+    const rootId = request.searchParams.get('rootId') || self.props.default_root_id;
 
     if (path.substr(-1) === '/') {
       return new Response(JSON.stringify((await gd.listFolderByPath(path, rootId))), {
@@ -585,7 +575,7 @@ self.props = {
     const tok = path.split('/');
     const name = tok.pop();
     const parent = tok.join('/');
-    const rootId = request.searchParams.get(self.props.root_drive) || self.props.default_root_id;
+    const rootId = request.searchParams.get('rootId') || self.props.default_root_id;
     return new Response(JSON.stringify((await gd.uploadByPath(parent, name, fileBody, rootId))), {
       headers: {
         'Content-Type': 'application/json'
